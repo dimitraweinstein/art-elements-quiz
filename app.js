@@ -1,6 +1,9 @@
 // import functions and grab DOM elements
-const button = document.getElementById('button');
+import { checkForYes } from './utils.js';
 
+
+const button = document.getElementById('button');
+const quizScore = document.getElementById('quiz-score');
 
 // initialize state
 
@@ -12,7 +15,6 @@ button.addEventListener('click', () => {
     alert('Welcome! The Elements of Art Quiz is about to begin!');
 
     const takeQuiz = confirm('Are you ready to take the quiz?');
-    console.log(takeQuiz);
 
     if (takeQuiz === false) {
         return;
@@ -22,7 +24,37 @@ button.addEventListener('click', () => {
 
     const lastName = prompt('What is your last name?');
 
-    
+    console.log(lastName);
 
+    const answerOne = prompt('True or False: A form is a three-dimensional shape.');
+
+    let quizScore = 0;
+
+    if (checkForYes(answerOne)) {
+        quizScore = quizScore + 1;
+
+    }
+
+    console.log(quizScore);
+
+    const answerTwo = prompt('Is a Line a mark with greater length than width?');
+
+    if (checkForYes(answerTwo)) {
+        quizScore = quizScore + 1;
+
+    }
+
+    console.log(quizScore);
+
+    const answerThree = prompt('Is a shape a closed line?');
+
+    if (checkForYes(answerThree)) {
+        quizScore = quizScore + 1;
+
+    }
+
+    console.log(quizScore);
+
+    quizScore.textContent = `Congratulations ${firstName} ${lastName}! You got ${quizScore} out of 3!`
 
 });
