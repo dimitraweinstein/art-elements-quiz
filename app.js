@@ -2,6 +2,7 @@
 import { checkForYes } from './utils.js';
 
 
+
 const button = document.getElementById('button');
 const scoreResults = document.getElementById('score-results');
 
