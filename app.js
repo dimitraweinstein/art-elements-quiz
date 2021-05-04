@@ -3,7 +3,7 @@ import { checkForYes } from './utils.js';
 
 
 const button = document.getElementById('button');
-const quizScore = document.getElementById('quiz-score');
+const scoreResults = document.getElementById('score-results');
 
 // initialize state
 
@@ -55,6 +55,10 @@ button.addEventListener('click', () => {
 
     console.log(quizScore);
 
-    quizScore.textContent = `Congratulations ${firstName} ${lastName}! You got ${quizScore} out of 3!`
+    scoreResults.textContent = `Congratulations ${firstName} ${lastName}! You got ${quizScore} out of 3!`;
+
+    console.log(firstName, lastName);
+    console.log(scoreResults.textContent);
 
 });
+
