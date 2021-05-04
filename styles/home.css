@@ -1,4 +1,13 @@
 /* add home page styles here */
+caption {
+    font-size: xx-small;
+}
+
+img {
+    display: flex;
+    justify-content: end;
+}
+
 .button {
     margin: 20px;
 }

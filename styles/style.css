@@ -67,7 +67,9 @@ h2 {
 }
 
 .gutter-right {
-    margin-right: 20px;
+    margin-right: 10px;
+    max-height: 50px;
+    max-width: 230px;
 }
 
 .main-logo {

@@ -38,3 +38,11 @@
                 -if the user input is the same as the correct answer, add to the score in an increment of 1.
                 -Repeat the 'prompt' process for each question in the quiz.
                 -Finally, display results output in the DOM with the user's name and score.
+
+## Questions/Answer Key:
+
+1)True or False: A form is a three-dimensional shape. (Answer: True)
+
+2)Is a Line a mark with greater length than width? (Answer: Yes)
+
+3)Is a shape a closed line? (Answer: Yes)
