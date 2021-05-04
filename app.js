@@ -29,10 +29,16 @@ button.addEventListener('click', () => {
 
     const answerOne = prompt('True or False: A form is a three-dimensional shape.');
 
+
+
     let quizScore = 0;
 
-    if (checkForYes(answerOne)) {
+    const testResult = checkForYes(answerOne);
+    console.log(testResult);
+
+    if (testResult === true) {
         quizScore = quizScore + 1;
+        console.log(answerOne, 'this is answer one');
 
     }
 
@@ -40,8 +46,12 @@ button.addEventListener('click', () => {
 
     const answerTwo = prompt('Is a Line a mark with greater length than width?');
 
-    if (checkForYes(answerTwo)) {
+    const testResult2 = checkForYes(answerTwo);
+    console.log(testResult2);
+
+    if (testResult2 === true) {
         quizScore = quizScore + 1;
+        console.log(answerTwo, 'this is answer two');
 
     }
 
@@ -49,8 +59,12 @@ button.addEventListener('click', () => {
 
     const answerThree = prompt('Is a shape a closed line?');
 
-    if (checkForYes(answerThree)) {
+    const testResult3 = checkForYes(answerThree);
+    console.log(testResult);
+
+    if (testResult3 === true) {
         quizScore = quizScore + 1;
+        console.log(answerThree, 'this is answer Three');
 
     }
 
